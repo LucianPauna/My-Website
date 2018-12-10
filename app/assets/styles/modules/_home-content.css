@@ -1,0 +1,116 @@
+.home-content {
+  position: relative;
+  background-color: #000;
+  height: 400px;
+  overflow: hidden;
+  color: #FFF;
+  background: url(../../images/home-content-img-smallest.jpg) no-repeat;
+  background-size: cover;
+
+  @mixin atSmall {
+    background: url(../../images/home-content-img-small.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  @mixin atMedium {
+    background: url(../../images/home-content-img-medium.jpg) no-repeat;
+    background-size: cover;
+    height: 450px;
+  }
+
+  @mixin atLarge {
+    background: url(../../images/home-content-img-large.jpg) no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+}
+
+.home-content__text-content {
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+
+  @mixin atMedium {
+    margin-left: 10%;
+    top: 50%;
+    width: 60%;
+    transform: translateY(-50%);
+  }
+
+  @mixin atLarge {
+    width: 50%;
+    top: 50%;
+    margin-left: 10%;
+    transform: translateY(-50%);
+  }
+}
+
+.home-content__title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin: 50px 0 20px 0;
+
+  @mixin atSmall {
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin: 50px 0 20px 0;
+  }
+
+  @mixin atMedium {
+    font-size: 2.9rem;
+    font-weight: 500;
+    text-align: left;
+    margin: 0 0 20px 0;
+  }
+
+  @mixin atLarge {
+    text-align: left;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+  }
+}
+
+.home-content__description {
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-align: center;
+  margin: 0 10px 0 10px;
+
+  @mixin atSmall {
+    font-size: 1.7rem;
+    font-weight: 200;
+    margin: 0 30px 0 30px;
+  }
+
+  @mixin atMedium {
+    font-size: 1.9rem;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+  }
+
+  @mixin atLarge {
+    width: 80%;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 400;
+    margin: 0 0 0 0;
+  }
+}
+
+.home-content__image {
+  display: none;
+
+  @mixin atMedium {
+    display: block;
+    float: right;
+  }
+
+  @mixin atLarge {
+    border-radius: 50%;
+    float: right;
+  }
+}

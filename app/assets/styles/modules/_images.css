@@ -1,0 +1,15 @@
+.spinning-image {
+  display: none;
+
+  @mixin atMedium {
+    display: block;
+    border-radius: 50%;
+    transform: translate(20px, 50px);
+  }
+
+  @mixin atLarge {
+  display: block;
+  position: relative;
+  animation: spinningAnimationLarge 150s linear infinite alternate;
+  }
+}
