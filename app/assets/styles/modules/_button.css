@@ -8,7 +8,7 @@
   padding: .55rem;
   border-radius: 2px;
   font-size: 1.2rem;
-  width: 130px;
+  width: 150px;
 
   @mixin atSmall {
     margin: 20px auto 0 auto;
@@ -19,7 +19,7 @@
   @mixin atMedium {
     display: inline-block;
     font-size: 1.3rem;
-    width: 140px;
+    width: 179px;
     margin: 30px 30px 0 0;
     padding: .75rem 1.2rem;
   }
@@ -30,6 +30,12 @@
     display: inline-block;
     padding: .75rem 1.2rem;
     font-size: 1.5rem;
-    width: 160px;
+    width: 230px;
   }
+}
+
+.button:hover {
+  background-color: $mainBlue;
+  border: 2px solid #FFF;
+  color: #fff;
 }

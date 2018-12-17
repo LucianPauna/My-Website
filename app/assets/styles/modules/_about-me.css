@@ -1,0 +1,74 @@
+.about-me {
+  background: url(../../../assets/images/about-background.jpg);
+  font-size: 1.5rem;
+  cursor: default;
+}
+
+.about-me__description {
+
+  & > h3 {
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    @mixin atSmall {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+
+    @mixin atMedium {
+      margin: 0 0 15px 0;
+    }
+
+    @mixin atMediumLarge {
+      font-size: 1.6rem;
+    }
+
+    @mixin atLargest {
+      font-size: 1.7rem;
+    }
+  }
+
+  & > p {
+    font-size: 1.1rem;
+    margin: 10px 0 20px 0;
+
+    @mixin atSmall {
+      font-size: 1.2rem;
+      margin: 0 0 20px 0;
+    }
+
+    @mixin atMedium {
+      font-size: 1.2rem;
+      margin: 0 0 20px 0;
+    }
+
+    @mixin atMediumLarge {
+      font-size: 1.4rem;
+      margin: 0 0 20px 0;
+    }
+
+    @mixin atLarge {
+      font-size: 1.3rem;
+      margin: 0 0 20px 0;
+    }
+
+    @mixin atLargest {
+      font-size: 1.6rem;
+      margin: 0 0 30px 0;
+    }
+  }
+}
+
+.about-me__quote {
+  margin-top: 50px;
+  width: 400px;
+  float: right;
+  font-size: 1.3rem;
+  font-style: italic;
+
+  & > p:last-child {
+    text-align: right;
+  }
+}

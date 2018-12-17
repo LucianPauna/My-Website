@@ -9,3 +9,7 @@
     87.5% {transform: scale(.75) translateY(0px) rotate(-90deg); }
     100% {transform: scale(.5) translateY(0px) rotate(0deg); }
 }
+
+@keyframes skillsAnimation {
+  0% {width: 0;}
+}

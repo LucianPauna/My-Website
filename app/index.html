@@ -15,7 +15,7 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#top"><img src="images/lp-logo.png" alt="lucian pauna logo" /></a></li>
+          <li><a href="#top"><img src="assets/images/lp-logo.png" alt="lucian pauna logo" /></a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -23,7 +23,7 @@
       </nav>
     </header>
 
-    <div id="top" class="home-content page-section">
+    <div id="top" class="home-content">
       <div class="home-content__text-content">
         <h1 class="home-content__title">Lucian Pauna</h1>
         <h3 class="home-content__description">Front End Developer focused on creating clean, responsive and user-friendly websites. Let's work together and see what we can create.</h3>
@@ -33,35 +33,98 @@
         </p>
       </div>
       <div class="home-content__image">
-        <img class="spinning-image" src="images/large-circle.jpg" alt="spinning circle" />
+        <img class="spinning-image" src="assets/images/large-circle.jpg" alt="spinning circle" />
+      </div>
+
+    </div>
+
+    <div id="about" class="about-me">
+      <div class="wrapper">
+        <h1 class="section-heading">About Me</h1>
+
+        <div class="row row--gutters clearfix">
+          <div class="row__medium-4 row__medium-4--larger">
+            <picture>
+              <source srcset="assets/images/about-me-large.jpg" media="(min-width: 1200px)" />
+              <source srcset="assets/images/about-me-medium.jpg" media="(min-width: 800px)" />
+              <source srcset="assets/images/about-me-small.jpg" media="(min-width: 480px)" />
+              <img src="assets/images/about-me-smallest.jpg" alt="Me, Lucian" />
+            </picture>
+          </div>
+          <div class="about-me__description row__medium-8 row__medium-8--smaller">
+            <h3>
+              Designer || Developer || Gamer
+            </h3>
+
+            <p>
+              My name is Lucian Pauna and I am a front-end developer. I use HTML, CSS and JavaScript to build responsive and interactive websites, and, to speed up the development, I use tools such as Gulp, PostCSS and NPM. Because I believe the key for any successful project is comunication, I like to share updates with my clients periodically until the finalization of the project, and hopefully after.
+            </p>
+            <p>
+              Nothing I enjoy more than writing code from scratch.
+              My journey as a developer started in December 2017 after writing my first code. Shortly after, coding became my passion, and since then, I spent my time learning every day something new and aiming to get better than the previous day.
+            </p>
+            <p>
+              When I&rsquo;m not writing code, I am probably somewhere around the world with my girlfriend, discovering new amazing places and awesome people... or just at home, playing video games.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="headline">Knowledge &amp; Skills</h3>
+
+        <div class="progress clearfix">
+          <div class="progress__bar-container">
+            <div class="progress__bar progress__bar--html">
+              <div class="progress__value">90%</div>
+            </div>
+
+            <div class="progress__bar progress__bar--css">
+              <div class="progress__value">85%</div>
+            </div>
+
+            <div class="progress__bar progress__bar--javaScript">
+              <div class="progress__value">75%</div>
+            </div>
+
+            <div class="progress__bar progress__bar--design">
+              <div class="progress__value">50%</div>
+            </div>
+
+            <div class="progress__bar progress__bar--gaming">
+              <div class="progress__value">100%</div>
+            </div>
+          </div>
+
+          <div class="progress__title-container">
+            <h3 class="progress__title">HTML</h3>
+
+            <h3 class="progress__title">CSS</h3>
+
+            <h3 class="progress__title">JavaScript</h3>
+
+            <h3 class="progress__title">Design</h3>
+
+            <h3 class="progress__title">Gaming</h3>
+          </div>
+        </div>
+
+        <p>
+          a lot of images HTML, CSS, JavsScript, jQuery, Git, Gulp, npm, node.js, react.js etc
+        </p>
+
+        <h3 class="headline">Random facts</h3>
+        <p>GYM - "Patience will help you achieve your goal."</p>
+        <p>GAMES - "Practice makes perfect."</p>
+        <p>TENNIS - "You're a true player if you know how to lose"</p>
+
+        <div class="about-me__quote">
+          <p>&quot;Everything should be made as simple as possible, but not simpler &quot;</p>
+          <p>Albert Einstein</p>
+        </div>
       </div>
     </div>
 
-    <div id="about">
-      <h1>A bit more about me</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-
-      <h3>knowledge</h3>
-      <p>
-        20% Designer| 60% Developer | 20% Games
-      </p>
-
-      <h3>Things I love</h3>
-      <p>gim and what I learned from</p>
-      <p>games and what I learned from</p>
-      <p>travel and what I learned from</p>
-
-      <p>
-        a lot of images HTML, CSS, JavsScript etc
-      </p>
-
-    </div>
-
-    <div id="portfolio">
-      <h1>Portfolio</h1>
+    <div id="portfolio" style="background-color: red;">
+      <h1 class="section-heading">Portfolio</h1>
 
     </div>
 

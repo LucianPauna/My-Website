@@ -1,3 +1,4 @@
+
 .spinning-image {
   display: none;
 
@@ -10,6 +11,6 @@
   @mixin atLarge {
   display: block;
   position: relative;
-  animation: spinningAnimationLarge 150s linear infinite alternate;
+  animation: spinningAnimationLarge 180s linear infinite alternate;
   }
 }
