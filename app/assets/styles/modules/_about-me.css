@@ -62,13 +62,24 @@
 }
 
 .about-me__quote {
-  margin-top: 50px;
-  width: 400px;
-  float: right;
-  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1.2rem;
   font-style: italic;
+  text-align: center;
+
+  @mixin atMedium {
+    float: right;
+    width: 400px;
+  }
+
+  & > p {
+    margin: 5px 0;
+  }
 
   & > p:last-child {
     text-align: right;
+    width: 100%;
   }
 }
