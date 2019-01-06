@@ -1,4 +1,13 @@
 .row {
+  position: relative;
+
+  &__medium-4--display-at-medium {
+    display: none;
+
+    @mixin atMedium {
+      display: block;
+    }
+  }
 
   &--gutters {
     margin-right: -3%;

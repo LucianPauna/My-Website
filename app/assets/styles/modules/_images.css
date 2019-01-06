@@ -14,3 +14,16 @@
   animation: spinningAnimationLarge 180s linear infinite alternate;
   }
 }
+
+.centered-image {
+  opacity: .6;
+  margin-top: 40px;
+
+  @mixin atLarge {
+    margin-top: 40px;
+  }
+
+  @mixin atLargest {
+    margin-top: 25px;
+  }
+}

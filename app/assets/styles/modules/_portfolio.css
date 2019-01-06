@@ -1,0 +1,53 @@
+.portfolio {
+  background: url(../../../assets/images/portfolio-background.jpg) no-repeat;
+  background-size: cover;
+  opacity: 1;
+  padding-bottom: 50px;
+
+  &__project {
+    width: 90%;
+    text-align: center;
+    background-color: #FFF;
+    margin: 0 0 30px 0;
+    flex-shrink: 1;
+    transition: all .3s ease-in-out;
+    padding: 5px 5px 0 5px;
+    border-radius: 5px;
+
+    &:hover a {
+      display: block;
+    }
+
+    @mixin atMedium {
+      width: 45%;
+    }
+
+    @mixin atMediumLarge {
+      width: 30%;
+    }
+
+    & a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      padding: 0px 0 5px 0;
+      font-size: 1.3rem;
+    }
+
+    & img {
+      display: block;
+      width: auto;
+      height: auto;
+      border-radius: 5px;
+      padding-bottom: 5px;
+    }
+
+  }
+}
+
+.project-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
