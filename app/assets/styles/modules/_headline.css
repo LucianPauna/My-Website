@@ -16,4 +16,8 @@
   &--center {
     text-align: center;
   }
+
+  &--small-t-b-margin {
+    margin: 0;
+  }
 }

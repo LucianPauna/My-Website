@@ -1,7 +1,7 @@
 @import "normalize.css";
 @import "base/_mixins";
-@import "base/_global";
 @import "base/_variables";
+@import "base/_global";
 @import "modules/_home-content";
 @import "modules/_wrapper";
 @import "modules/_button";
@@ -15,3 +15,4 @@
 @import "modules/_section-heading";
 @import "modules/_progress";
 @import "modules/_portfolio";
+@import "modules/_contact-me";

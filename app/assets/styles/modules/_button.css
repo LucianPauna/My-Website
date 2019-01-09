@@ -10,7 +10,13 @@
   font-size: 1.2rem;
   width: 150px;
   border: 2px solid #FFF;
-  transition: background-color .75s;
+  transition: all .3s;
+
+  &:hover {
+    background-color: $mainBlue;
+    border: 2px solid #FFF;
+    color: #fff;
+  }
 
   @mixin atSmall {
     margin: 20px auto 0 auto;
@@ -27,17 +33,8 @@
   }
 
   @mixin atLarge{
-    border: 5px solid #FFF;
-    margin: 30px 30px 0 0;
-    display: inline-block;
-    padding: .75rem 1.2rem;
+    border: 2px solid #FFF;
     font-size: 1.5rem;
     width: 230px;
   }
-}
-
-.button:hover {
-  background-color: $mainBlue;
-  border: 2px solid #FFF;
-  color: #fff;
 }

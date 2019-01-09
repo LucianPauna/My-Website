@@ -22,7 +22,7 @@
         </ul>
       </nav>
     </header>
-
+    <!-- Main Information -->
     <div id="top" class="home-content">
       <div class="home-content__text-content">
         <h1 class="home-content__title">Lucian Pauna</h1>
@@ -37,11 +37,13 @@
       </div>
 
     </div>
+    <!-- End of Main Information -->
 
+    <!-- About Me -->
     <div id="about" class="about-me">
       <div class="wrapper">
         <h1 class="section-heading">ABOUT ME</h1>
-
+        
         <div class="row row--gutters clearfix">
           <div class="row__medium-4 row__medium-4--larger">
             <picture>
@@ -74,9 +76,8 @@
           <p>-Albert Einstein-</p>
         </div>
 
-        <h3 class="headline headline--clear-both">Main Skills</h3>
-
         <div class="progress clearfix">
+          <h3 class="headline headline--center headline--clear-both">Main Skills</h3>
           <div class="progress__bar-container">
             <div class="progress__bar progress__bar--html">
               <div class="progress__value">90%</div>
@@ -117,9 +118,9 @@
             <img src="assets/images/icons/hobbies.png" alt="image with my hobbies"  />
           </div>
           <div class="about-me__hobbies row__medium-8">
-            <h3 class="headline">Random Facts</h3>
+            <h3 class="headline headline--center">Random Facts</h3>
             <p>I love to travel. The journey of a thousand miles begin with a single step.</p>
-            <p>I am a gamer. Before my interest in writing code, I have beat over 500 games. Since then, only one.</p>
+            <p>I am a gamer. Before my interest in writing code, I have beat over 500 games.</p>
             <p>I enjoy to bake cakes. Enjoy eating them even more.</p>
             <p>I love going to the gym. It makes me feel relaxed and pacient.</p>
             <p>I like footbal tennis. I have been playing it for 13 years.</p>
@@ -127,6 +128,7 @@
         </div>
 
         <div class="about-me__icons">
+          <h3 class="headline headline--center">Languages & Tools</h3>
           <ul>
             <li><img src="assets/images/icons/html.png" alt="html logo" title="HTML" ></li>
             <li><img src="assets/images/icons/css.png" alt="css logo" title="CSS" ></li>
@@ -143,10 +145,12 @@
         </div>
       </div>
     </div>
+    <!-- End of About Me -->
 
+    <!-- Portfolio -->
     <div id="portfolio" class="portfolio">
       <h1 class="section-heading section-heading--white">PORTFOLIO</h1>
-      <div class="wrapper clearfix">
+      <div class="wrapper">
         <div class="project-holder">
           <div class="portfolio__project">
             <a href="http://www.lucianpauna.com"><img src="assets/images/lucianpauna.jpg" alt="..." />Lucian Pauna</a>
@@ -169,16 +173,51 @@
         </div>
       </div>
     </div>
+    <!-- End of Portfolio -->
 
-    <div id="contact">
+    <!-- Contact Me -->
+    <div id="contact" class="contact-me">
       <h1 class="section-heading">CONTACT ME</h1>
+      <div class="wrapper">
+        <h3 class="headline headline--center headline--small-t-b-margin">If you are inerested in working with me, have a question, or just want to say hi, please feel free to contact me. </h3>
+        <div class="contact-me__form-container">
+          <form>
+            <fieldset>
+              <div class="contact-me__form-field">
+                <input type="text" id="contactName" class="input name" name="name" min="3" placeholder="Your Name" required />
+              </div>
+              <div class="contact-me__form-field">
+                <input type="email" id="contactEmail" class="input email" name="email" placeholder="Your Email" required />
+              </div>
+              <div class="contact-me__contact-form">
+                <select id="subject" class="input select" name="subject" required>
+                  <option selected disabled hidden>Subject</option>
+                  <option>New Project</option>
+                  <option>Job Opportunity</option>
+                  <option>Say Hello</option>
+                </select>
+              </div>
+              <div class="contact-me__form-field">
+                <textarea id="message" class="input message" name="message" placeholder="Your Message"
+                cols="50" rows="10" required></textarea>
+              </div>
+              <div class="contact-me__form-field">
+                <button type="submit" id="submit-button" class="form-button">Send Message</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
     </div>
+    <!-- End of Contact Me -->
 
+    <!-- Footer -->
     <footer>
       <a href="#">&copy; 2018 Lucian Pauna</a>
       <a href="#">Github picture</a>
       <a href="#">linkedIn picture</a>
       <a href="#">email picture</a>
     </footer>
+    <!-- End of Footer -->
   </body>
 </html>
