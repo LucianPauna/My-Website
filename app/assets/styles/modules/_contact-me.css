@@ -2,6 +2,7 @@
   background : url(../../../assets/images/about-background.jpg) no-repeat;
 
   &__form-container {
+    margin: 10px 0;
     width: 100%;
     position: relative;
     left: 50%;

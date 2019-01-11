@@ -1,0 +1,107 @@
+.footer {
+  background-color: #000;
+  font-weight: 100;
+}
+
+.footer__web {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+
+  & > a, & > a:visited {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: all .3s ease-in-out;
+  }
+
+  & > a:hover {
+    color: $mainBlue;
+  }
+}
+
+.footer__images {
+  width: 300px;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  & > a {
+    margin: 5px 7px;;
+    display: inline-block;
+    position: relative;
+  }
+}
+
+.cv-image{
+  background: url(../../../assets/images/sprites/contact-sprite.png) 0px -150px no-repeat;
+  width: 50px;
+  height: 50px;
+
+  & span {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url(../../../assets/images/sprites/contact-sprite.png) -50px -150px no-repeat;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &:hover span{
+    opacity: 1;
+  }
+}
+
+.in-image{
+  background: url(../../../assets/images/sprites/contact-sprite.png) 0px -50px no-repeat;
+  width: 50px;
+  height: 50px;
+
+  & span {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url(../../../assets/images/sprites/contact-sprite.png) -50px -50px no-repeat;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &:hover span{
+    opacity: 1;
+  }
+}
+
+.github-image{
+  background: url(../../../assets/images/sprites/contact-sprite.png) 0px 0px no-repeat;
+  width: 50px;
+  height: 50px;
+
+  & span {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url(../../../assets/images/sprites/contact-sprite.png) -50px 0px no-repeat;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &:hover span{
+    opacity: 1;
+  }
+}
+
+.email-image{
+  background: url(../../../assets/images/sprites/contact-sprite.png) 0px -100px no-repeat;
+  width: 50px;
+  height: 50px;
+
+  & span {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url(../../../assets/images/sprites/contact-sprite.png) -50px -100px no-repeat;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &:hover span{
+    opacity: 1;
+  }
+}

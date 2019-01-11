@@ -28,8 +28,8 @@
         <h1 class="home-content__title">Lucian Pauna</h1>
         <h3 class="home-content__description">Front End Developer focused on creating clean, responsive and user-friendly websites. Let's work together and see what we can create.</h3>
         <p>
-          <a href="#" class="button">Give me a shout</a>
-          <a href="#" class="button">More about me</a>
+          <a href="#contact" class="button">Give me a shout</a>
+          <a href="#about" class="button">More about me</a>
         </p>
       </div>
       <div class="home-content__image">
@@ -43,7 +43,7 @@
     <div id="about" class="about-me">
       <div class="wrapper">
         <h1 class="section-heading">ABOUT ME</h1>
-        
+
         <div class="row row--gutters clearfix">
           <div class="row__medium-4 row__medium-4--larger">
             <picture>
@@ -115,7 +115,7 @@
 
         <div class="row row--gutters row--gutters-wide clearfix">
           <div class="centered-image row__medium-4 row__medium-4--display-at-medium">
-            <img src="assets/images/icons/hobbies.png" alt="image with my hobbies"  />
+            <span class="icon icon-hobbies"></span>
           </div>
           <div class="about-me__hobbies row__medium-8">
             <h3 class="headline headline--center">Random Facts</h3>
@@ -130,17 +130,17 @@
         <div class="about-me__icons">
           <h3 class="headline headline--center">Languages & Tools</h3>
           <ul>
-            <li><img src="assets/images/icons/html.png" alt="html logo" title="HTML" ></li>
-            <li><img src="assets/images/icons/css.png" alt="css logo" title="CSS" ></li>
-            <li><img src="assets/images/icons/js.png" alt="javaScript logo" title="JavaScript" ></li>
-            <li><img src="assets/images/icons/jquery.png" alt="jquery logo" title="jQuery" ></li>
-            <li><img src="assets/images/icons/gulp.png" alt="gulp logo" title="Gulp" ></li>
-            <li><img src="assets/images/icons/npm.png" alt="npm logo" title="Node Package Manager" ></li>
-            <li><img src="assets/images/icons/git.png" alt="git logo" title="Git" ></li>
-            <li><img src="assets/images/icons/atom.png" alt="atom logo" title="Atom" ></li>
-            <li><img src="assets/images/icons/vs.png" alt="visual studio logo" title="Visual Studio" ></li>
-            <li><img src="assets/images/icons/photoshop.png" alt="photoshop logo" title="Photoshop" ></li>
-            <li><img src="assets/images/icons/sass.png" alt="sass logo" title="Sass" ></li>
+            <li><span class="icon icon-html" title="HTML"></span></li>
+            <li><span class="icon icon-css" title="CSS"></span></li>
+            <li><span class="icon icon-js" title="JavaScript"></span></li>
+            <li><span class="icon icon-jquery" title="jQuery"></span></li>
+            <li><span class="icon icon-gulp" title="Gulp"></span></li>
+            <li><span class="icon icon-npm" title="Node Package Manager"></span></li>
+            <li><span class="icon icon-git" title="Git"></span></li>
+            <li><span class="icon icon-atom" title="Atom"></span></li>
+            <li><span class="icon icon-vs" title="Visual Studio"></span></li>
+            <li><span class="icon icon-photoshop" title="Photoshop"></span></li>
+            <li><span class="icon icon-sass" title="Sass"></span></li>
           </ul>
         </div>
       </div>
@@ -179,7 +179,7 @@
     <div id="contact" class="contact-me">
       <h1 class="section-heading">CONTACT ME</h1>
       <div class="wrapper">
-        <h3 class="headline headline--center headline--small-t-b-margin">If you are inerested in working with me, have a question, or just want to say hi, please feel free to contact me. </h3>
+        <h3 class="headline headline--small headline--center headline--small-t-b-margin">If you are inerested in working with me, have a question, or just want to say hi, please feel free to contact me. </h3>
         <div class="contact-me__form-container">
           <form>
             <fieldset>
@@ -192,9 +192,9 @@
               <div class="contact-me__contact-form">
                 <select id="subject" class="input select" name="subject" required>
                   <option selected disabled hidden>Subject</option>
-                  <option>New Project</option>
-                  <option>Job Opportunity</option>
-                  <option>Say Hello</option>
+                  <option class="option">New Project</option>
+                  <option class="option">Job Opportunity</option>
+                  <option class="option">Say Hello</option>
                 </select>
               </div>
               <div class="contact-me__form-field">
@@ -212,11 +212,18 @@
     <!-- End of Contact Me -->
 
     <!-- Footer -->
-    <footer>
-      <a href="#">&copy; 2018 Lucian Pauna</a>
-      <a href="#">Github picture</a>
-      <a href="#">linkedIn picture</a>
-      <a href="#">email picture</a>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__web">
+          <a href="https://www.lucianpauna.com">&copy; 2018 Lucian Pauna</a>
+        </div>
+        <div class="footer__images">
+          <a href="https://github.com/LucianPauna" target="_blank" class="github-image" title="Github"><span></span></a>
+          <a href="https://www.linkedin.com/in/lucianpauna/" target="_blank" class="in-image" title="LinkedIn"><span></span></a>
+          <a href="mailto:paunalucian14@gmail.com" class="email-image" title="Quick Email"><span></span></a>
+          <a href="#" class="cv-image" title="My CV"><span></span></a>
+        </div>
+      </div>
     </footer>
     <!-- End of Footer -->
   </body>

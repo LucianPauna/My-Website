@@ -10,3 +10,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* class to display sprites */
+.icon {
+  display: inline-block;
+}
