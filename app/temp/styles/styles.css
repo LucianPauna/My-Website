@@ -372,7 +372,7 @@ img {
 
   background-color: #000;
   position: relative;
-  height: 400px;
+  height: 500px;
   overflow: hidden;
   color: #FFF;
   background: url(../../../assets/images/home-content-img-smallest.jpg) no-repeat;
@@ -392,7 +392,7 @@ img {
 .home-content {
     background: url(../../../assets/images/home-content-img-medium.jpg) no-repeat;
     background-size: cover;
-    height: 450px
+    height: 550px
 }
   }
 
@@ -401,7 +401,7 @@ img {
 .home-content {
     background: url(../../../assets/images/home-content-img-large.jpg) no-repeat;
     background-size: cover;
-    height: 600px
+    height: 800px
 }
   }
 
@@ -411,6 +411,10 @@ img {
   max-width: 100%;
   z-index: 2;
   margin: 0 10px;
+  top: 50%;
+  padding-top: 50px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 @media (min-width: 480px) {
@@ -424,10 +428,7 @@ img {
 
 .home-content__text-content {
     width: 60%;
-    margin-left: 10%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%)
+    margin-left: 10%
 }
   }
 
@@ -644,27 +645,27 @@ img {
   }
 
 @-webkit-keyframes spinningAnimationLarge {
-  0% {-webkit-transform: scale(1) translateX(0px) rotate(0deg);transform: scale(1) translateX(0px) rotate(0deg); }
-    12.5% {-webkit-transform: scale(.75) translateY(-150px) rotate(-90deg);transform: scale(.75) translateY(-150px) rotate(-90deg);}
-    25% {-webkit-transform: scale(.5) translateY(-100px) rotate(-180deg);transform: scale(.5) translateY(-100px) rotate(-180deg); }
-    37.5% {-webkit-transform: scale(.5) translateY(0px) rotate(0deg);transform: scale(.5) translateY(0px) rotate(0deg); }
-    50% {-webkit-transform: scale(1) translateY(250px) rotate(180deg);transform: scale(1) translateY(250px) rotate(180deg); }
-    62.5% {-webkit-transform: scale(.75) translateY(0px) rotate(-90deg);transform: scale(.75) translateY(0px) rotate(-90deg);}
-    75% {-webkit-transform: scale(1) translateY(-150px) rotate(180deg);transform: scale(1) translateY(-150px) rotate(180deg); }
-    87.5% {-webkit-transform: scale(.75) translateY(0px) rotate(-90deg);transform: scale(.75) translateY(0px) rotate(-90deg); }
-    100% {-webkit-transform: scale(.5) translateY(0px) rotate(0deg);transform: scale(.5) translateY(0px) rotate(0deg); }
+  0% {-webkit-transform: scale(1) translateY(150px) rotate(0deg);transform: scale(1) translateY(150px) rotate(0deg); }
+    12.5% {-webkit-transform: scale(.75) translateY(100px) rotate(-90deg);transform: scale(.75) translateY(100px) rotate(-90deg);}
+    25% {-webkit-transform: scale(.5) translateY(150px) rotate(-180deg);transform: scale(.5) translateY(150px) rotate(-180deg); }
+    37.5% {-webkit-transform: scale(.5) translateY(100px) rotate(0deg);transform: scale(.5) translateY(100px) rotate(0deg); }
+    50% {-webkit-transform: scale(1) translateY(300px) rotate(180deg);transform: scale(1) translateY(300px) rotate(180deg); }
+    62.5% {-webkit-transform: scale(.75) translateY(200px) rotate(-90deg);transform: scale(.75) translateY(200px) rotate(-90deg);}
+    75% {-webkit-transform: scale(1) translateY(300px) rotate(180deg);transform: scale(1) translateY(300px) rotate(180deg); }
+    87.5% {-webkit-transform: scale(.75) translateY(200px) rotate(-90deg);transform: scale(.75) translateY(200px) rotate(-90deg); }
+    100% {-webkit-transform: scale(.5) translateY(150px) rotate(0deg);transform: scale(.5) translateY(150px) rotate(0deg); }
 }
 
 @keyframes spinningAnimationLarge {
-  0% {-webkit-transform: scale(1) translateX(0px) rotate(0deg);transform: scale(1) translateX(0px) rotate(0deg); }
-    12.5% {-webkit-transform: scale(.75) translateY(-150px) rotate(-90deg);transform: scale(.75) translateY(-150px) rotate(-90deg);}
-    25% {-webkit-transform: scale(.5) translateY(-100px) rotate(-180deg);transform: scale(.5) translateY(-100px) rotate(-180deg); }
-    37.5% {-webkit-transform: scale(.5) translateY(0px) rotate(0deg);transform: scale(.5) translateY(0px) rotate(0deg); }
-    50% {-webkit-transform: scale(1) translateY(250px) rotate(180deg);transform: scale(1) translateY(250px) rotate(180deg); }
-    62.5% {-webkit-transform: scale(.75) translateY(0px) rotate(-90deg);transform: scale(.75) translateY(0px) rotate(-90deg);}
-    75% {-webkit-transform: scale(1) translateY(-150px) rotate(180deg);transform: scale(1) translateY(-150px) rotate(180deg); }
-    87.5% {-webkit-transform: scale(.75) translateY(0px) rotate(-90deg);transform: scale(.75) translateY(0px) rotate(-90deg); }
-    100% {-webkit-transform: scale(.5) translateY(0px) rotate(0deg);transform: scale(.5) translateY(0px) rotate(0deg); }
+  0% {-webkit-transform: scale(1) translateY(150px) rotate(0deg);transform: scale(1) translateY(150px) rotate(0deg); }
+    12.5% {-webkit-transform: scale(.75) translateY(100px) rotate(-90deg);transform: scale(.75) translateY(100px) rotate(-90deg);}
+    25% {-webkit-transform: scale(.5) translateY(150px) rotate(-180deg);transform: scale(.5) translateY(150px) rotate(-180deg); }
+    37.5% {-webkit-transform: scale(.5) translateY(100px) rotate(0deg);transform: scale(.5) translateY(100px) rotate(0deg); }
+    50% {-webkit-transform: scale(1) translateY(300px) rotate(180deg);transform: scale(1) translateY(300px) rotate(180deg); }
+    62.5% {-webkit-transform: scale(.75) translateY(200px) rotate(-90deg);transform: scale(.75) translateY(200px) rotate(-90deg);}
+    75% {-webkit-transform: scale(1) translateY(300px) rotate(180deg);transform: scale(1) translateY(300px) rotate(180deg); }
+    87.5% {-webkit-transform: scale(.75) translateY(200px) rotate(-90deg);transform: scale(.75) translateY(200px) rotate(-90deg); }
+    100% {-webkit-transform: scale(.5) translateY(150px) rotate(0deg);transform: scale(.5) translateY(150px) rotate(0deg); }
 }
 
 @-webkit-keyframes skillsAnimation {
@@ -1547,3 +1548,242 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .email-image:hover span{
     opacity: 1;
   }
+
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 47px;
+  background-color: rgba(0,0,0, 1);
+  border-bottom: 2px solid #0d68ea;
+  transition: height .3s ease-in-out;
+}
+
+.header--is-expanded {
+    height: 120px;
+  }
+
+@media (min-width: 800px) {
+
+.header {
+    height: 60px
+}
+  }
+
+.header__logo-container {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 7px;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-37.5px);
+          transform: translateX(-37.5px);
+  z-index: 2;
+}
+
+@media (min-width: 800px) {
+
+.header__logo-container {
+    top: 20px;
+    left: 10%;
+    -webkit-transform: none;
+            transform: none
+}
+  }
+
+@media (min-width: 1200px) {
+
+.header__logo-container {
+    left: 15%
+}
+  }
+
+.header__logo {
+  display: block;
+  position: relative;
+  background: url(../../../assets/images/sprites/lp-logo-sprite.png) 0px 0px no-repeat;
+  width: 75px;
+  height: 75px;
+}
+
+.header__logo span {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    opacity: 0;
+    transition: opacity .3s;
+    background: url(../../../assets/images/sprites/lp-logo-sprite.png) -75px 0px no-repeat;
+  }
+
+.header__logo:hover span{
+    opacity: 1;
+  }
+
+.header__menu-icon {
+  width: 20px;
+  height: 19px;
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+  right: 10px;
+  cursor: pointer;
+  /* End of x icon */
+}
+
+/* Hamburger icon */
+
+.header__menu-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #FFF;
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    transition: all .3s ease-in-out;
+  }
+
+.header__menu-icon__middle {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #FFF;
+    transition: all .3s ease-in-out;
+  }
+
+.header__menu-icon::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #FFF;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    transition: all .3s ease-in-out;
+  }
+
+/* End of Hamburger menu icon */
+
+@media (min-width: 800px) {
+
+.header__menu-icon {
+    display: none
+}
+  }
+
+/* x icon */
+
+.header__menu-icon--close-x::before {
+      -webkit-transform: rotate(45deg) scaleX(1.2);
+              transform: rotate(45deg) scaleX(1.2);
+      left: 2px;
+      border-radius: 5px;
+    }
+
+.header__menu-icon--close-x .header__menu-icon__middle {
+      opacity: 0;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+    }
+
+.header__menu-icon--close-x::after {
+      -webkit-transform: rotate(-45deg) scaleX(1.2);
+              transform: rotate(-45deg) scaleX(1.2);
+      left: 2px;
+      border-radius: 5px;
+    }
+
+.main-nav {
+  opacity: 0;
+  padding-top: 70px;
+  text-align: center;
+  z-index: -10;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: all .2s 0s;
+}
+
+@media (min-width: 800px) {
+
+.main-nav {
+    opacity: 1;
+    z-index: 1;
+    padding-top: 0;
+    display: block;
+    -webkit-transform: scale(1);
+            transform: scale(1)
+}
+  }
+
+.main-nav--is-visible {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    z-index: 1;
+    transition: all .4s ease-in-out .3s;
+  }
+
+@media (min-width: 800px) {
+
+.main-nav--right {
+      float: right
+  }
+  }
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+.main-nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+  }
+
+@media (min-width: 800px) {
+
+.main-nav li {
+      float: left
+  }
+  }
+
+.main-nav li:last-child {
+    padding-right: 0;
+  }
+
+@media (min-width: 800px) {
+
+.main-nav li:last-child {
+      padding-right: 20px
+  }
+  }
+
+.main-nav a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 200;
+    display: block;
+    padding: 18px 5px;
+  }
+
+@media (min-width: 800px) {
+
+.main-nav a {
+      font-size: 1.6rem;
+      padding: 15px 0
+  }
+  }
+
+.main-nav a:hover {
+      color: #0d68ea;
+    }

@@ -12,16 +12,29 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#top"><img src="assets/images/lp-logo.png" alt="lucian pauna logo" /></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Header -->
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__logo-container">
+          <a href="#top" class="header__logo"><span></span></a>
+        </div>
+
+        <div class="header__menu-icon">
+          <div class="header__menu-icon__middle"></div>
+        </div>
+
+        <nav class="main-nav main-nav--right">
+          <ul class="clearfix">
+            <li style="display: none;"></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    <!-- End of Header -->
+
     <!-- Main Information -->
     <div id="top" class="home-content">
       <div class="home-content__text-content">
@@ -226,5 +239,8 @@
       </div>
     </footer>
     <!-- End of Footer -->
+
+    <!-- JavaScript -->
+    <script src="/temp/scripts/App.js"></script>
   </body>
 </html>
