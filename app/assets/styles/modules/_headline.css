@@ -23,4 +23,10 @@
   &--small-t-b-margin {
     margin: 0;
   }
+
+  &--padding-left-at-medium {
+    @mixin atMedium {
+      margin-left: -55%;
+    }
+  }
 }

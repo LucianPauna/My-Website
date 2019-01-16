@@ -1,0 +1,11 @@
+/* Styling for revealing the Main Skills progress bars */
+
+.animation-paused {
+  animation-play-state: paused;
+
+  &--false {
+    animation-play-state: running;
+  }
+}
+
+/* End of styling for revealing the Main Skills progress bars */

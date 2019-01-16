@@ -1,0 +1,45 @@
+/* Styling for revealing the about-us bottom icons */
+
+.reveal-icon {
+  opacity: 0;
+
+  &--is-visible {
+    opacity: 1;
+  }
+}
+
+.icon-html {
+  transition: all 1.5s ease-out;
+}
+.icon-css {
+  transition: all 1.5s ease-out .2s;
+}
+.icon-js {
+  transition: all 1.5s ease-out .4s;
+}
+.icon-jquery {
+  transition: all 1s ease-out .6s;
+}
+.icon-gulp {
+  transition: all 1.5s ease-out .8s;
+}
+.icon-npm {
+  transition: all 1.5s ease-out 1s;
+}
+.icon-git {
+  transition: all 1.5s ease-out 1.2s;
+}
+.icon-atom {
+  transition: all 1.5s ease-out 1.4s;
+}
+.icon-vs {
+  transition: all 1.5s ease-out 1.6s;
+}
+.icon-photoshop {
+  transition: all 1.5s ease-out 1.8s;
+}
+.icon-sass {
+  transition: all 1.5s ease-out 2s;
+}
+
+/* End of styling for revealing the about-us bottom icons */

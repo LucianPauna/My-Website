@@ -40,7 +40,7 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     position: relative;
-    animation: skillsAnimation 1.5s;
+    animation: skillsAnimation 1.5s backwards;
 
     @mixin atMedium {
       height: 30px;
@@ -51,28 +51,34 @@
     }
 
     &--css {
+      animation-delay: .2s;
       width: 85%;
     }
 
     &--javaScript {
       width: 70%;
+      animation-delay: .4s;
     }
 
     &--design {
-      width: 50%
+      width: 50%;
+      animation-delay: .6s;
     }
 
     &--gaming {
       width: 95%;
+      animation-delay: .8s;
     }
   }
 
   &__value {
     color: #FFF;
     position: relative;
+    opacity: 1;
     bottom: 5px;
     font-size: 1.5rem;
     padding: 0 0 0 10px;
+    animation: skillsAnimation 3.5s backwards;
 
     @mixin atMedium {
       font-size: 2rem;
