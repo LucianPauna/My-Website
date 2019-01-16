@@ -25,10 +25,10 @@
 
         <nav class="main-nav main-nav--right">
           <ul class="clearfix">
-            <li style="display: none;"></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#top" id="none-link">HAHAH</a></li>
+            <li><a href="#about" id="about-link">About</a></li>
+            <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
+            <li><a href="#contact" id="contact-link">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -36,7 +36,7 @@
     <!-- End of Header -->
 
     <!-- Main Information -->
-    <div id="top" class="home-content">
+    <div id="top" class="page-section home-content" data-matching-link="#none-link">
       <div class="home-content__text-content">
         <h1 class="home-content__title">Lucian Pauna</h1>
         <h3 class="home-content__description">Front End Developer focused on creating clean, responsive and user-friendly websites. Let's work together and see what we can create.</h3>
@@ -53,7 +53,7 @@
     <!-- End of Main Information -->
 
     <!-- About Me -->
-    <div id="about" class="about-me">
+    <div id="about" class="page-section about-me" data-matching-link="#about-link">
       <div class="wrapper">
         <h1 class="section-heading">ABOUT ME</h1>
 
@@ -161,7 +161,7 @@
     <!-- End of About Me -->
 
     <!-- Portfolio -->
-    <div id="portfolio" class="portfolio">
+    <div id="portfolio" class="page-section portfolio" data-matching-link="#portfolio-link">
       <h1 class="section-heading section-heading--white">PORTFOLIO</h1>
       <div class="wrapper">
         <div class="project-holder">
@@ -189,35 +189,33 @@
     <!-- End of Portfolio -->
 
     <!-- Contact Me -->
-    <div id="contact" class="contact-me">
+    <div id="contact" class="page-section contact-me" data-matching-link="#contact-link">
       <h1 class="section-heading">CONTACT ME</h1>
       <div class="wrapper">
         <h3 class="headline headline--small headline--center headline--small-t-b-margin">If you are inerested in working with me, have a question, or just want to say hi, please feel free to contact me. </h3>
         <div class="contact-me__form-container">
           <form>
-            <fieldset>
-              <div class="contact-me__form-field">
-                <input type="text" id="contactName" class="input name" name="name" min="3" placeholder="Your Name" required />
-              </div>
-              <div class="contact-me__form-field">
-                <input type="email" id="contactEmail" class="input email" name="email" placeholder="Your Email" required />
-              </div>
-              <div class="contact-me__contact-form">
-                <select id="subject" class="input select" name="subject" required>
-                  <option selected disabled hidden>Subject</option>
-                  <option class="option">New Project</option>
-                  <option class="option">Job Opportunity</option>
-                  <option class="option">Say Hello</option>
-                </select>
-              </div>
-              <div class="contact-me__form-field">
-                <textarea id="message" class="input message" name="message" placeholder="Your Message"
-                cols="50" rows="10" required></textarea>
-              </div>
-              <div class="contact-me__form-field">
-                <button type="submit" id="submit-button" class="form-button">Send Message</button>
-              </div>
-            </fieldset>
+            <div class="contact-me__form-field">
+              <input type="text" id="contactName" class="input name" name="name" min="3" placeholder="Your Name" required />
+            </div>
+            <div class="contact-me__form-field">
+              <input type="email" id="contactEmail" class="input email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="contact-me__contact-form">
+              <select id="subject" class="input select" name="subject" required>
+                <option selected disabled hidden>Subject</option>
+                <option class="option">New Project</option>
+                <option class="option">Job Opportunity</option>
+                <option class="option">Say Hello</option>
+              </select>
+            </div>
+            <div class="contact-me__form-field">
+              <textarea id="message" class="input message" name="message" placeholder="Your Message"
+              cols="50" rows="10" required></textarea>
+            </div>
+            <div class="contact-me__form-field">
+              <button type="submit" id="submit-button" class="form-button">Send Message</button>
+            </div>
           </form>
         </div>
       </div>

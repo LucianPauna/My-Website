@@ -1250,12 +1250,24 @@ img {
 .message {
   resize: none;
   height: 10rem;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;;
+  font-size: 1.2rem;
+  padding: 2px 5px;
+  border-radius: 5px;
 }
 
 @media (min-width: 800px) {
 
 .message {
-    height: 15rem
+    height: 17rem;
+    margin-left: 1px;
+    margin-right: 1px;
+    width: 100%;
+    font-size: 1.5rem;
+    box-shadow: .5px .5px .5px darkgray inset
 }
   }
 
@@ -1270,7 +1282,7 @@ img {
   border-radius: 5px;
   font-size: 1rem;
   width: 120px;
-  border: 2px solid #000;
+  border: 1px solid #000;
   transition: all .3s;
 }
 
@@ -1279,14 +1291,22 @@ img {
 .form-button {
     padding: .55rem;
     font-size: 1.2rem;
-    width: 150px
+    width: 150px;
+    border: 2px solid #000
 }
   }
 
 .form-button:hover {
     background-color: #0d68ea;
-    border: 2px solid #FFF;
+    border: 1px solid #FFF;
     color: #FFF;
+  }
+
+@media (min-width: 800px) {
+
+.form-button:hover {
+      border: 2px solid #FFF
+  }
   }
 
 @media (min-width: 480px) {
@@ -1600,7 +1620,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   z-index: 10;
   width: 100%;
   height: 47px;
-  background-color: rgba(0,0,0, 1);
+  background-color: #000;
   border-bottom: 2px solid #0d68ea;
   transition: height .3s ease-in-out;
 }
@@ -1802,6 +1822,10 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
   }
 
+.main-nav li:first-child {
+    display: none;
+  }
+
 .main-nav li:last-child {
     padding-right: 0;
   }
@@ -1820,7 +1844,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     font-weight: 200;
     display: block;
     padding: 18px 5px;
+    transition: color .3s ease-out;
   }
+
+.main-nav a.is-current-link {
+      color: rgba(13,104,234, .6);
+    }
 
 @media (min-width: 800px) {
 
@@ -1828,11 +1857,11 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
       font-size: 1.6rem;
       padding: 15px 0
   }
-  }
 
-.main-nav a:hover {
-      color: #0d68ea;
-    }
+      .main-nav a:hover {
+        color: #0d68ea;
+      }
+  }
 
 /* Styling for revealing the portfolio items */
 

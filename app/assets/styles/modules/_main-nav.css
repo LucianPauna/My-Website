@@ -42,6 +42,10 @@
     }
   }
 
+  li:first-child {
+    display: none;
+  }
+
   li:last-child {
     padding-right: 0;
 
@@ -57,14 +61,19 @@
     font-weight: 200;
     display: block;
     padding: 18px 5px;
+    transition: color .3s ease-out;
+
+    &.is-current-link {
+      color: rgba($mainBlue, .6);
+    }
 
     @mixin atMedium {
       font-size: 1.6rem;
       padding: 15px 0;
-    }
 
-    &:hover {
-      color: $mainBlue;
+      &:hover {
+        color: $mainBlue;
+      }
     }
   }
 }
