@@ -1,7 +1,10 @@
 .about-me {
-  background: url(../../../assets/images/about-background.jpg);
   font-size: 1.5rem;
   cursor: default;
+
+  &.lazyloaded {
+    background: url(../../../assets/images/about-background.jpg);
+  }
 }
 
 .about-me__description {

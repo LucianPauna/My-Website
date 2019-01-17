@@ -1,8 +1,11 @@
 .portfolio {
-  background: url(../../../assets/images/portfolio-background.jpg) no-repeat;
-  background-size: cover;
   opacity: 1;
   padding-bottom: 50px;
+
+  &.lazyloaded {
+    background: url(../../../assets/images/portfolio-background.jpg) no-repeat;
+    background-size: cover;
+  }
 
   &__project {
     width: 90%;

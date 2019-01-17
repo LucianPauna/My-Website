@@ -1,5 +1,8 @@
 .contact-me {
-  background : url(../../../assets/images/about-background.jpg) no-repeat;
+
+  &.lazyloaded {
+    background : url(../../../assets/images/about-background.jpg) no-repeat;
+  }
 
   &__form-container {
     margin: 10px 0;

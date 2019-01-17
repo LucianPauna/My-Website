@@ -733,10 +733,13 @@ img {
   }
 
 .about-me {
-  background: url(../../../assets/images/about-background.jpg);
   font-size: 1.5rem;
   cursor: default;
 }
+
+.about-me.lazyloaded {
+    background: url(../../../assets/images/about-background.jpg);
+  }
 
 .about-me__description > h3 {
     text-align: center;
@@ -1140,11 +1143,14 @@ img {
   }
 
 .portfolio {
-  background: url(../../../assets/images/portfolio-background.jpg) no-repeat;
-  background-size: cover;
   opacity: 1;
   padding-bottom: 50px;
 }
+
+.portfolio.lazyloaded {
+    background: url(../../../assets/images/portfolio-background.jpg) no-repeat;
+    background-size: cover;
+  }
 
 .portfolio__project {
     width: 90%;
@@ -1201,9 +1207,9 @@ img {
   flex-direction: row;
 }
 
-.contact-me {
-  background : url(../../../assets/images/about-background.jpg) no-repeat;
-}
+.contact-me.lazyloaded {
+    background : url(../../../assets/images/about-background.jpg) no-repeat;
+  }
 
 .contact-me__form-container {
     margin: 10px 0;

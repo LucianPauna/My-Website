@@ -9,6 +9,7 @@
     <meta name="description" content="Mobile first responsive webpage" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
     <link href="temp/styles/styles.css" rel="stylesheet" type="text/css" />
+    <script src="/temp/scripts/Vendor.js"></script>
   </head>
 
   <body>
@@ -46,24 +47,24 @@
         </p>
       </div>
       <div class="home-content__image">
-        <img class="spinning-image" src="assets/images/large-circle.jpg" alt="spinning circle" />
+        <img class="spinning-image lazyload" data-src="assets/images/large-circle.jpg" alt="spinning circle" />
       </div>
 
     </div>
     <!-- End of Main Information -->
 
     <!-- About Me -->
-    <div id="about" class="page-section about-me" data-matching-link="#about-link">
+    <div id="about" class="page-section about-me lazyload" data-matching-link="#about-link">
       <div class="wrapper">
         <h1 class="section-heading">ABOUT ME</h1>
 
         <div class="row row--gutters clearfix">
           <div class="row__medium-4 row__medium-4--larger">
             <picture>
-              <source srcset="assets/images/about-me-large.jpg" media="(min-width: 1200px)" />
-              <source srcset="assets/images/about-me-medium.jpg" media="(min-width: 800px)" />
-              <source srcset="assets/images/about-me-small.jpg" media="(min-width: 480px)" />
-              <img src="assets/images/about-me-smallest.jpg" alt="Me, Lucian" />
+              <source class="lazyload" data-srcset="assets/images/about-me-large.jpg" media="(min-width: 1200px)" />
+              <source class="lazyload" data-srcset="assets/images/about-me-medium.jpg" media="(min-width: 800px)" />
+              <source  class="lazyload" data-srcset="assets/images/about-me-small.jpg" media="(min-width: 480px)" />
+              <img  class="lazyload" data-src="assets/images/about-me-smallest.jpg" alt="Me, Lucian" />
             </picture>
           </div>
           <div class="about-me__description row__medium-8 row__medium-8--smaller">
@@ -161,27 +162,27 @@
     <!-- End of About Me -->
 
     <!-- Portfolio -->
-    <div id="portfolio" class="page-section portfolio" data-matching-link="#portfolio-link">
+    <div id="portfolio" class="page-section portfolio lazyload" data-matching-link="#portfolio-link">
       <h1 class="section-heading section-heading--white">PORTFOLIO</h1>
       <div class="wrapper">
         <div class="project-holder">
           <div class="portfolio__project reveal-portfolio--lucian">
-            <a href="http://www.lucianpauna.com"><img src="assets/images/lucianpauna.jpg" alt="..." />Lucian Pauna</a>
+            <a href="http://www.lucianpauna.com"><img class="lazyload" data-src="assets/images/lucianpauna.jpg" alt="..." />Lucian Pauna</a>
           </div>
           <div class="portfolio__project reveal-portfolio--travel">
-            <a href="https://lucianpauna.github.io/Travel-Site-Example/"><img src="assets/images/romania-escapes.jpg" alt="..." />Romania Travel</a>
+            <a href="https://lucianpauna.github.io/Travel-Site-Example/"><img class="lazyload" data-src="assets/images/romania-escapes.jpg" alt="..." />Romania Travel</a>
           </div>
           <div class="portfolio__project reveal-portfolio--three">
-            <a href=""><img src="assets/images/gow.jpg" alt="..." />JavaScript Liters Calculator</a>
+            <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="..." />JavaScript Liters Calculator</a>
           </div>
           <div class="portfolio__project reveal-portfolio--four">
-            <a href=""><img src="assets/images/gow.jpg" alt="..." />Some Project</a>
+            <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="..." />Some Project</a>
           </div>
           <div class="portfolio__project reveal-portfolio--five">
-            <a href=""><img src="assets/images/gow.jpg" alt="..." />Some Project</a>
+            <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="..." />Some Project</a>
           </div>
           <div class="portfolio__project reveal-portfolio--six">
-            <a href=""><img src="assets/images/gow.jpg" alt="..." />Some Project</a>
+            <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="..." />Some Project</a>
           </div>
         </div>
       </div>
@@ -189,7 +190,7 @@
     <!-- End of Portfolio -->
 
     <!-- Contact Me -->
-    <div id="contact" class="page-section contact-me" data-matching-link="#contact-link">
+    <div id="contact" class="page-section contact-me lazyload" data-matching-link="#contact-link">
       <h1 class="section-heading">CONTACT ME</h1>
       <div class="wrapper">
         <h3 class="headline headline--small headline--center headline--small-t-b-margin">If you are inerested in working with me, have a question, or just want to say hi, please feel free to contact me. </h3>
