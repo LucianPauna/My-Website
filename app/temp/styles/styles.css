@@ -1153,6 +1153,7 @@ img {
   }
 
 .portfolio__project {
+    -ms-fles-shrink: 1;
     width: 90%;
     text-align: center;
     background-color: #FFF;
@@ -1203,8 +1204,8 @@ img {
 .project-holder {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .contact-me.lazyloaded {
