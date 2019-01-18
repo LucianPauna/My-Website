@@ -59,6 +59,101 @@
   }
 }
 
+/* Navigation images */
+.header__images {
+  width: 130px;
+  text-align: left;
+  position: absolute;
+  visibility: hidden;
+  z-index: -10;
+  opacity: 0;
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    z-index: 20;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  & > a {
+    margin: 8px 2px;;
+    display: inline-block;
+    position: relative;
+  }
+
+  @mixin atMedium {
+    width: 150px;
+    text-align: center;
+    position: absolute;
+    z-index: 20;
+    left: 20%;
+    visibility: visible;
+    opacity: 1;
+
+    & > a {
+      margin: 15px 7px;;
+      display: inline-block;
+      position: relative;
+    }
+  }
+}
+
+.email-image-top{
+  background: url(../../../assets/images/sprites/contact-sprite-top.png) 0px -64px no-repeat;
+  width: 32px;
+  height: 32px;
+
+  & span {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url(../../../assets/images/sprites/contact-sprite-top.png) -32px -64px no-repeat;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &:hover span{
+    opacity: 1;
+  }
+}
+
+.in-image-top{
+  background: url(../../../assets/images/sprites/contact-sprite-top.png) 0px -32px no-repeat;
+  width: 32px;
+  height: 32px;
+
+  & span {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url(../../../assets/images/sprites/contact-sprite-top.png) -32px -32px no-repeat;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &:hover span{
+    opacity: 1;
+  }
+}
+
+.github-image-top{
+  background: url(../../../assets/images/sprites/contact-sprite-top.png) 0px 0px no-repeat;
+  width: 32px;
+  height: 32px;
+
+  & span {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url(../../../assets/images/sprites/contact-sprite-top.png) -32px 0px no-repeat;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &:hover span{
+    opacity: 1;
+  }
+}
+/*End of Navigation images */
+
+
 .header__menu-icon {
   width: 20px;
   height: 19px;
