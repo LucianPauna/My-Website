@@ -3,7 +3,7 @@
   padding-bottom: 50px;
 
   &.lazyloaded {
-    background: url(../../../assets/images/portfolio-background.jpg) no-repeat;
+    background: url(../../assets/images/portfolio-background.jpg) no-repeat;
     background-size: cover;
   }
 

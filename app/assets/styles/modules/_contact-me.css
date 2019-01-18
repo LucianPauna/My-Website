@@ -1,7 +1,7 @@
 .contact-me {
 
   &.lazyloaded {
-    background : url(../../../assets/images/about-background.jpg) no-repeat;
+    background : url(../../assets/images/about-background.jpg) no-repeat;
   }
 
   &__form-container {

@@ -42,7 +42,7 @@
 .header__logo {
   display: block;
   position: relative;
-  background: url(../../../assets/images/sprites/lp-logo-sprite.png) 0px 0px no-repeat;
+  background: url(../../assets/images/sprites/lp-logo-sprite.png) 0px 0px no-repeat;
   width: 75px;
   height: 75px;
 
@@ -51,7 +51,7 @@
     top: 0; left: 0; bottom: 0; right: 0;
     opacity: 0;
     transition: opacity .3s;
-    background: url(../../../assets/images/sprites/lp-logo-sprite.png) -75px 0px no-repeat;
+    background: url(../../assets/images/sprites/lp-logo-sprite.png) -75px 0px no-repeat;
   }
 
   &:hover span{
@@ -99,7 +99,7 @@
 }
 
 .email-image-top{
-  background: url(../../../assets/images/sprites/contact-sprite-top.png) 0px -64px no-repeat;
+  background: url(../../assets/images/sprites/contact-sprite-top.png) 0px -64px no-repeat;
   width: 32px;
   height: 32px;
 
@@ -117,14 +117,14 @@
 }
 
 .in-image-top{
-  background: url(../../../assets/images/sprites/contact-sprite-top.png) 0px -32px no-repeat;
+  background: url(../../assets/images/sprites/contact-sprite-top.png) 0px -32px no-repeat;
   width: 32px;
   height: 32px;
 
   & span {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    background: url(../../../assets/images/sprites/contact-sprite-top.png) -32px -32px no-repeat;
+    background: url(../../assets/images/sprites/contact-sprite-top.png) -32px -32px no-repeat;
     opacity: 0;
     transition: opacity .3s;
   }
@@ -135,14 +135,14 @@
 }
 
 .github-image-top{
-  background: url(../../../assets/images/sprites/contact-sprite-top.png) 0px 0px no-repeat;
+  background: url(../../assets/images/sprites/contact-sprite-top.png) 0px 0px no-repeat;
   width: 32px;
   height: 32px;
 
   & span {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    background: url(../../../assets/images/sprites/contact-sprite-top.png) -32px 0px no-repeat;
+    background: url(../../assets/images/sprites/contact-sprite-top.png) -32px 0px no-repeat;
     opacity: 0;
     transition: opacity .3s;
   }

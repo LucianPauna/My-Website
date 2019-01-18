@@ -17,133 +17,133 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 <i class="icon icon-home"></i>
 */
 .icon-atom {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -77px -302px;
   width: 75px;
   height: 75px;
 }
 .icon-css {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -385px -302px;
   width: 75px;
   height: 75px;
 }
 .icon-cv-hover {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -362px -379px;
   width: 50px;
   height: 50px;
 }
 .icon-cv {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -310px -379px;
   width: 50px;
   height: 50px;
 }
 .icon-email-hover {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -258px -379px;
   width: 50px;
   height: 50px;
 }
 .icon-email {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -206px -379px;
   width: 50px;
   height: 50px;
 }
 .icon-git {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: 0px -302px;
   width: 75px;
   height: 75px;
 }
 .icon-github-hover {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -154px -379px;
   width: 50px;
   height: 50px;
 }
 .icon-github {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -406px -231px;
   width: 50px;
   height: 50px;
 }
 .icon-gulp {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -231px -302px;
   width: 75px;
   height: 75px;
 }
 .icon-hobbies {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: 0px 0px;
   width: 300px;
   height: 300px;
 }
 .icon-html {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -404px -77px;
   width: 80px;
   height: 75px;
 }
 .icon-in-hover {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -354px -231px;
   width: 50px;
   height: 50px;
 }
 .icon-in {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -302px -231px;
   width: 50px;
   height: 50px;
 }
 .icon-jquery {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: 0px -379px;
   width: 75px;
   height: 75px;
 }
 .icon-js {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -154px -302px;
   width: 75px;
   height: 75px;
 }
 .icon-node {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -302px 0px;
   width: 193px;
   height: 75px;
 }
 .icon-npm {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -379px -154px;
   width: 75px;
   height: 75px;
 }
 .icon-photoshop {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -302px -154px;
   width: 75px;
   height: 75px;
 }
 .icon-react {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -308px -302px;
   width: 75px;
   height: 75px;
 }
 .icon-sass {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -302px -77px;
   width: 100px;
   height: 75px;
 }
 .icon-vs {
-  background-image: url(../../../assets/images/sprites/sprite.png);
+  background-image: url(../../assets/images/sprites/sprite.png);
   background-position: -77px -379px;
   width: 75px;
   height: 75px;
