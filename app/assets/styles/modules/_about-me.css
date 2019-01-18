@@ -3,7 +3,7 @@
   cursor: default;
 
   &.lazyloaded {
-    background: url(../../../assets/images/about-background.jpg);
+    background: url(../../assets/images/about-background.jpg);
   }
 }
 
