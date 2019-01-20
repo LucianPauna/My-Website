@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Lucian Pauna | Web Designer and Developer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Lucian Pauna | Designer &amp; Web Developer</title>
+    <meta property="og:title" content="Lucian Pauna | Designer &amp; Web Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lucian Pauna" />
+	  <meta property="og:url" content="http://www.lucianpauna.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="keywords" content="web developer, web designer, responsive web design" />
+    <meta name="keywords" content="Development, Design, Responsive, Web" />
     <meta name="author" content="Lucian Pauna" />
-    <meta name="description" content="Mobile first responsive webpage" />
+    <meta name="description" content="Portfolio of Lucian Pauna - designer and developer specialized in designing responsive websites." />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
 
     <!-- build:css assets/styles/styles.css -->
@@ -16,6 +20,17 @@
     <!-- build:js assets/scripts/Vendor.js -->
     <script src="/temp/scripts/Vendor.js"></script>
     <!-- endbuild -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132830079-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132830079-1');
+    </script>
+
   </head>
 
   <body>
@@ -38,7 +53,7 @@
 
         <nav class="main-nav main-nav--right">
           <ul class="clearfix">
-            <li><a href="#top" id="none-link">HAHAH</a></li>
+            <li><a href="#top" id="none-link">Top of the Page</a></li>
             <li><a href="#about" id="about-link">About</a></li>
             <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
             <li><a href="#contact" id="contact-link">Contact</a></li>
@@ -54,8 +69,8 @@
         <h1 class="home-content__title">Lucian Pauna</h1>
         <h3 class="home-content__description">Front End Developer focused on creating clean, responsive and user-friendly websites. Let's work together and see what we can create.</h3>
         <p>
-          <a href="#contact" class="button">Give me a shout</a>
-          <a href="#about" class="button">More about me</a>
+          <a href="#contact" class="button contact-me-btn">Give me a shout</a>
+          <a href="#about" class="button about-me-btn">More about me</a>
         </p>
       </div>
       <div class="home-content__image">
@@ -179,27 +194,27 @@
       <div class="wrapper">
         <div class="project-holder">
           <div class="portfolio__project reveal-portfolio--lucian">
-            <a href="http://www.lucianpauna.com"><img class="lazyload" data-src="assets/images/lucianpauna.jpg" alt="..." />Lucian Pauna</a>
+            <a href="http://www.lucianpauna.com" target="_blank"><img class="lazyload" data-src="assets/images/lucianpauna.jpg" alt="Photo of Lucian Portfolio Website" />Lucian Pauna</a>
           </div>
 
           <div class="portfolio__project reveal-portfolio--travel">
-            <a href="https://lucianpauna.github.io/Travel-Site-Example/"><img class="lazyload" data-src="assets/images/romania-escapes.jpg" alt="..." />Romania Travel</a>
+            <a href="https://lucianpauna.github.io/Travel-Site-Example/" target="+blank"><img class="lazyload" data-src="assets/images/romania-escapes.jpg" alt="Photo of Romania Travel Website" />Romania Travel</a>
           </div>
 
           <div class="portfolio__project reveal-portfolio--three">
-            <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="..." />JavaScript Liters Calculator</a>
+            <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="Photo of another project" />JavaScript Liters Calculator</a>
           </div>
 
           <div class="portfolio__project reveal-portfolio--four">
-            <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="..." />Some Project</a>
+            <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="Photo of another project" />Some Project</a>
           </div>
 
           <div class="portfolio__project reveal-portfolio--five">
-            <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="..." />Some Project</a>
+            <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="Photo of another project" />Some Project</a>
           </div>
 
           <div class="portfolio__project reveal-portfolio--six">
-            <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="..." />Some Project</a>
+            <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="Photo of another project" />Some Project</a>
           </div>
         </div>
       </div>
@@ -210,7 +225,8 @@
     <div id="contact" class="page-section contact-me lazyload" data-matching-link="#contact-link">
       <h1 class="section-heading">CONTACT ME</h1>
       <div class="wrapper">
-        <h3 class="headline headline--small headline--center headline--small-t-b-margin">If you are inerested in working with me, have a question, or just want to say hi, please feel free to contact me. </h3>
+        <h3 class="headline headline--small headline--center headline--small-t-margin">
+          If you have a project that I can help with, a question or just want to say hi, please don't hesitate to contact me. </h3>
         <div class="contact-me__form-container">
           <form>
             <div class="contact-me__form-field">

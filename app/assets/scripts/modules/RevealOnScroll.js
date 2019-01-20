@@ -6,6 +6,7 @@ class RevealOnScroll {
     this.progressBar = $(".progress__bar");
     this.icon = $(".icon");
     this.portfolioProject = $(".portfolio__project");
+
     this.animationPausedInitially();
     this.hideInitially();
 

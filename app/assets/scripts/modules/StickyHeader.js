@@ -6,6 +6,8 @@ class StickyHeader {
   constructor() {
     this.pageSections = $(".page-section");
     this.headerLinks = $(".main-nav a");
+    this.contactBtn = $(".contact-me-btn");
+    this.aboutBtn = $(".about-me-btn");
 
     this.createPageSectionWaypoints();
     this.addSmoothScrolling();
@@ -13,6 +15,8 @@ class StickyHeader {
 
   addSmoothScrolling() {
     this.headerLinks.smoothScroll();
+    this.contactBtn.smoothScroll();
+    this.aboutBtn.smoothScroll();
   }
 
   createPageSectionWaypoints() {

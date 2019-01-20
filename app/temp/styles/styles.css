@@ -705,6 +705,18 @@ img {
     font-size: 1.5rem;
   }
 
+@media (min-width: 800px) {
+
+.headline--small {
+      font-size: 1.7rem;
+      position: relative;
+      max-width: 800px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%)
+  }
+  }
+
 .headline--clear-both {
     clear: both;
   }
@@ -721,8 +733,8 @@ img {
             transform: translateY(-50%);
   }
 
-.headline--small-t-b-margin {
-    margin: 0;
+.headline--small-t-margin {
+    margin: 0 0 30px 0;
   }
 
 @media (min-width: 800px) {
@@ -731,6 +743,10 @@ img {
       margin-left: -55%
   }
   }
+
+.hide {
+  opacity: .4 !important;
+}
 
 .about-me {
   font-size: 1.5rem;
@@ -1989,23 +2005,23 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 
 .reveal-portfolio--travel {
-  transition-delay: .2s;
-}
-
-.reveal-portfolio--three {
   transition-delay: .4s;
 }
 
-.reveal-portfolio--four {
-  transition-delay: .6s;
-}
-
-.reveal-portfolio--five {
+.reveal-portfolio--three {
   transition-delay: .8s;
 }
 
+.reveal-portfolio--four {
+  transition-delay: 1.2s;
+}
+
+.reveal-portfolio--five {
+  transition-delay: 1.6s;
+}
+
 .reveal-portfolio--six {
-  transition-delay: 1s;
+  transition-delay: 2s;
 }
 
 /*  End of styling for revealing the portfolio items */
