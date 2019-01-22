@@ -2147,3 +2147,66 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .cv__close:hover {
       color: #0d68ea;
     }
+
+.tooltip {
+  visibility: hidden;
+  width: 140px;
+  font-size: 1rem;
+  background-color: #FFF;
+  color: #000;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: -150%;
+  left: 20%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity .3s ease-out;
+}
+
+.tooltip:before {
+  content: attr(tooltip);
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: -17%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #FFF transparent;
+}
+
+#email-to-copy:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .3s ease-out;
+}
+
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  border-radius: 4px;
+}

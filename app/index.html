@@ -21,6 +21,8 @@
     <script src="/temp/scripts/Vendor.js"></script>
     <!-- endbuild -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132830079-1"></script>
     <script>
@@ -44,7 +46,7 @@
         <div class="header__images">
           <a href="https://github.com/LucianPauna" target="_blank" class="github-image-top" title="Github"><span></span></a>
           <a href="https://www.linkedin.com/in/lucianpauna/" target="_blank" class="in-image-top" title="LinkedIn"><span></span></a>
-          <a href="mailto:paunalucian14@gmail.com" class="email-image-top" title="Quick Email"><span></span></a>
+          <a id="email-to-copy" data-clipboard-text="paunalucian@gmail.com" class="email-image-top"><span></span><div class="tooltip" tooltip="Click to copy my email address."></div></a>
         </div>
 
         <div class="header__menu-icon">
@@ -69,7 +71,7 @@
         <h1 class="home-content__title">Lucian Pauna</h1>
         <h3 class="home-content__description">Front End Developer focused on creating clean, responsive and user-friendly websites. Let's work together and see what we can create.</h3>
         <p>
-          <a href="#contact" class="button contact-me-btn">Give me a shout</a>
+          <a href="#contact" class="button contact-me-btn">Contact me</a>
           <a href="#about" class="button about-me-btn">More about me</a>
         </p>
       </div>
@@ -161,7 +163,7 @@
           <div class="about-me__hobbies row__medium-8">
             <h3 class="headline headline--center">Random Facts</h3>
             <p>I love to travel. The journey of a thousand miles begins with a single step.</p>
-            <p>I am a gamer. Before my interest in writing code, I have compleated over 500 games.</p>
+            <p>I am a gamer. Before my interest in writing code, I have completed over 500 games.</p>
             <p>I enjoy backing cakes. I enjoy eating them even more.</p>
             <p>I love going to the gym. It keeps me focused and relaxed.</p>
             <p>I like football tennis. I have been playing it for 13 years.</p>
@@ -228,7 +230,8 @@
         <h3 class="headline headline--small headline--center headline--small-t-margin">
           If you have a project that I can help with, a question or just want to say hi, please don't hesitate to contact me. </h3>
         <div class="contact-me__form-container">
-          <form>
+
+          <form id="ajax-contact" method="post" action="contactform.php">
             <div class="contact-me__form-field">
               <input type="text" id="contactName" class="input name" name="name" min="3" placeholder="Your Name" required />
             </div>
@@ -251,6 +254,8 @@
               <button type="submit" id="submit-button" class="form-button">Send Message</button>
             </div>
           </form>
+
+          <div id="form-messages"></div>
         </div>
       </div>
     </div>
@@ -284,5 +289,57 @@
     <!-- build:js assets/scripts/App.js -->
     <script src="/temp/scripts/App.js"></script>
     <!-- endbuild -->
+    <script>
+      $(function() {
+
+        // Get the form.
+        var form = $('#ajax-contact');
+
+        // Get the messages div.
+        var formMessages = $('#form-messages');
+
+        // Set up an event listener for the contact form.
+        $(form).submit(function(e) {
+        // Stop the browser from submitting the form.
+          e.preventDefault();
+
+        // Serialize the form data.
+          var formData = $(form).serialize();
+
+        // Submit the form using AJAX.
+          $.ajax({
+            type: 'POST',
+            url: $(form).attr('action'),
+            data: formData
+          })
+          .done(function(response) {
+            // Make sure that the formMessages div has the 'success' class.
+            $(formMessages).removeClass('error');
+            $(formMessages).addClass('success');
+
+            // Set the message text.
+            $(formMessages).text(response);
+
+            // Clear the form.
+            $('#contactName').val('');
+            $('#contactEmail').val('');
+            $("#subject").prop('selectedIndex',0);
+            $('#message').val('');
+          })
+          .fail(function(data) {
+            // Make sure that the formMessages div has the 'error' class.
+            $(formMessages).removeClass('success');
+            $(formMessages).addClass('error');
+
+            // Set the message text.
+            if (data.responseText !== '') {
+              $(formMessages).text(data.responseText);
+            } else {
+              $(formMessages).text('Oops! An error occured and your message could not be sent.');
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
