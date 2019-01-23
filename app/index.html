@@ -21,8 +21,6 @@
     <script src="/temp/scripts/Vendor.js"></script>
     <!-- endbuild -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132830079-1"></script>
     <script>
@@ -69,7 +67,7 @@
     <div id="top" class="page-section home-content" data-matching-link="#none-link">
       <div class="home-content__text-content">
         <h1 class="home-content__title">Lucian Pauna</h1>
-        <h3 class="home-content__description">Front End Developer focused on creating clean, responsive and user-friendly websites. Let's work together and see what we can create.</h3>
+        <h3 class="home-content__description">I am a Front End Developer focused on creating fast, responsive and user-friendly websites. Let&rsquo;s build your next project together.</h3>
         <p>
           <a href="#contact" class="button contact-me-btn">Contact me</a>
           <a href="#about" class="button about-me-btn">More about me</a>
@@ -196,26 +194,26 @@
       <div class="wrapper">
         <div class="project-holder">
           <div class="portfolio__project reveal-portfolio--lucian">
-            <a href="http://www.lucianpauna.com" target="_blank"><img class="lazyload" data-src="assets/images/lucianpauna.jpg" alt="Photo of Lucian Portfolio Website" />Lucian Pauna</a>
+            <a href="#" class="detailed-portfolio-image__open--my-website"><img class="lazyload" data-src="assets/images/lucianpauna.jpg" alt="Image of my portfolio website" />Lucian Pauna</a>
           </div>
 
           <div class="portfolio__project reveal-portfolio--travel">
-            <a href="https://lucianpauna.github.io/Travel-Site-Example/" target="+blank"><img class="lazyload" data-src="assets/images/romania-escapes.jpg" alt="Photo of Romania Travel Website" />Romania Travel</a>
+            <a href="#" class="detailed-portfolio-image__open--romania-travel"><img class="lazyload" data-src="assets/images/romania-escapes.jpg" alt="Image of Romania Travel Website" />Romania Travel</a>
           </div>
 
-          <div class="portfolio__project reveal-portfolio--three">
+          <div class="portfolio__project reveal-portfolio--three" style="display: none;">
             <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="Photo of another project" />JavaScript Liters Calculator</a>
           </div>
 
-          <div class="portfolio__project reveal-portfolio--four">
+          <div class="portfolio__project reveal-portfolio--four" style="display: none;">
             <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="Photo of another project" />Some Project</a>
           </div>
 
-          <div class="portfolio__project reveal-portfolio--five">
+          <div class="portfolio__project reveal-portfolio--five" style="display: none;">
             <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="Photo of another project" />Some Project</a>
           </div>
 
-          <div class="portfolio__project reveal-portfolio--six">
+          <div class="portfolio__project reveal-portfolio--six" style="display: none;">
             <a href=""><img class="lazyload" data-src="assets/images/gow.jpg" alt="Photo of another project" />Some Project</a>
           </div>
         </div>
@@ -277,69 +275,39 @@
     </footer>
     <!-- End of Footer -->
 
+    <!-- My-website detailed image -->
+    <div class="detailed-portfolio-image detailed-portfolio-image--my-website">
+      <img class="lazyload" data-src="assets/images/my-website.jpg" alt="Image  showing the diference between desktop design and phone design." />
+        <a href="http://www.lucianpauna.com" target="_blank" class="detailed-portfolio-button">View Website</a>
+        <div class="detailed-portfolio-image__close">
+          X
+        </div>
+    </div>
+    <!-- End of My-website detailed image -->
+
+    <!-- Romania-travel website detailed image -->
+    <div class="detailed-portfolio-image detailed-portfolio-image--romania-travel">
+      <img class="lazyload" data-src="assets/images/romania-travel-details.jpg" alt="Image showing the diference between desktop design and phone design." />
+        <a href="https://lucianpauna.github.io/Travel-Site-Example/" target="_blank" class="detailed-portfolio-button">View Website</a>
+        <div class="detailed-portfolio-image__close">
+          X
+        </div>
+    </div>
+    <!-- Romania-travel website detailed image -->
+
+    <!-- CV -->
     <div class="cv">
       <h2 class="headline headline--center headline--vertical-center">Work in progress. Will be available soon!</h2>
       <div class="cv__close">
         X
       </div>
     </div>
+    <!-- End of CV -->
 
     <!-- JavaScript -->
 
     <!-- build:js assets/scripts/App.js -->
     <script src="/temp/scripts/App.js"></script>
     <!-- endbuild -->
-    <script>
-      $(function() {
-
-        // Get the form.
-        var form = $('#ajax-contact');
-
-        // Get the messages div.
-        var formMessages = $('#form-messages');
-
-        // Set up an event listener for the contact form.
-        $(form).submit(function(e) {
-        // Stop the browser from submitting the form.
-          e.preventDefault();
-
-        // Serialize the form data.
-          var formData = $(form).serialize();
-
-        // Submit the form using AJAX.
-          $.ajax({
-            type: 'POST',
-            url: $(form).attr('action'),
-            data: formData
-          })
-          .done(function(response) {
-            // Make sure that the formMessages div has the 'success' class.
-            $(formMessages).removeClass('error');
-            $(formMessages).addClass('success');
-
-            // Set the message text.
-            $(formMessages).text(response);
-
-            // Clear the form.
-            $('#contactName').val('');
-            $('#contactEmail').val('');
-            $("#subject").prop('selectedIndex',0);
-            $('#message').val('');
-          })
-          .fail(function(data) {
-            // Make sure that the formMessages div has the 'error' class.
-            $(formMessages).removeClass('success');
-            $(formMessages).addClass('error');
-
-            // Set the message text.
-            if (data.responseText !== '') {
-              $(formMessages).text(data.responseText);
-            } else {
-              $(formMessages).text('Oops! An error occured and your message could not be sent.');
-            }
-          });
-        });
-      });
-    </script>
   </body>
 </html>
