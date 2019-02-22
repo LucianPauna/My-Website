@@ -15,6 +15,11 @@ var cv = new CV();
 var siblingsLowOpacity = new SiblingsLowOpacity();
 var copyEmailOnClick = new CopyEmailOnClick();
 var contactFormSubmit = new ContactFormSubmit();
+
 new DetailedPortfolioImage($(".detailed-portfolio-image__open--my-website"), $(".detailed-portfolio-image--my-website"), $(".detailed-portfolio-image__close"));
+
 new DetailedPortfolioImage($(".detailed-portfolio-image__open--romania-travel"), $(".detailed-portfolio-image--romania-travel"), $(".detailed-portfolio-image__close"));
+
 new DetailedPortfolioImage($(".detailed-portfolio-image__open--dice-game"), $(".detailed-portfolio-image--dice-game"), $(".detailed-portfolio-image__close"));
+
+new DetailedPortfolioImage($(".detailed-portfolio-image__open--budget-app"), $(".detailed-portfolio-image--budget-app"), $(".detailed-portfolio-image__close"));
