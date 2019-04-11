@@ -23,3 +23,5 @@ new DetailedPortfolioImage($(".detailed-portfolio-image__open--romania-travel"),
 new DetailedPortfolioImage($(".detailed-portfolio-image__open--dice-game"), $(".detailed-portfolio-image--dice-game"), $(".detailed-portfolio-image__close"));
 
 new DetailedPortfolioImage($(".detailed-portfolio-image__open--budget-app"), $(".detailed-portfolio-image--budget-app"), $(".detailed-portfolio-image__close"));
+
+new DetailedPortfolioImage($(".detailed-portfolio-image__open--recipy"), $(".detailed-portfolio-image--recipy"), $(".detailed-portfolio-image__close"));
